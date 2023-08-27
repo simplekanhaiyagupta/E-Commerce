@@ -1,0 +1,433 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+#poster1{
+    
+
+    background: url('IMAGE/first_shop.avif');
+    /* height: 50vh; */
+    width:100%;
+   
+    background-size: 100%;
+}
+ .header-text  {
+    display: flex;
+    justify-content: center;
+    align-items:  center center;
+    text-decoration: none;
+    text-align: center;
+    font-size: 40px;
+    height: 50vh;
+   
+   
+}
+h1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #000000;
+
+}
+
+#Shop-now{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.header-text2 h1{
+    color: #000000;
+    font-size: 30px;
+    font-family: sans-serif;
+    font-weight: 400px;
+    color: #8407e3f2;
+}
+#payment{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.from-paymet{
+    height: 600px;
+    width: 600px;
+    border: 2px solid 0px 31px 24px 1px rgba(0, 0, 0, 0.28);
+backdrop-filter: blur(5px);
+-webkit-backdrop-filter: blur(5px);
+    border-radius: 9px;
+    background-color:  rgba(255, 255, 255, 0.5);
+    
+    box-shadow:  0px 15px 24px 1px rgba(0, 0, 0, 0.28);
+backdrop-filter: blur(5px);
+-webkit-backdrop-filter: blur(5px);
+}
+.from-paymet h1{
+    color: #000000;
+}
+.from-paymet input{
+    width: 40%;
+    height: 40px;
+}
+.card{
+    
+}
+.card1{
+    height: 50px;
+    width: 60px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    margin-left: 10px;
+
+}
+.cardv{
+    height: 40px;
+    width: 60px;
+    margin-left: 10px;
+    cursor: pointer;
+}
+.card h2{
+    margin-left: 30px;
+}
+input{
+    margin-bottom: 20px;
+    align-items: center;
+    row-gap: 36px;
+    margin-left: 30px;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 2px solid black;
+
+}
+::placeholder{
+    color: #080710;
+    font-weight: 500;
+    
+    font-family: sans-serif;
+}
+input:hover{
+    background-color: ghostwhite;
+    outline: none;
+}
+.payment{
+    width: 85%;
+    height: 50px;
+    margin-left: 33px;
+    font-size: 25px;
+    font-weight: 400;
+    background-color: #10d10a;
+    
+    outline: none;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: none;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    cursor: pointer;
+
+}
+input{
+    font-size: 17px;
+    font-weight: 300;
+    background: transparent;
+    outline: none;
+}
+.payment:hover{
+    background-color: orange;
+}
+.social ion-icon{
+    color: rgb(250, 167, 13);
+    font-size: 30px;
+    font-weight: 400;
+}
+.social ion-icon:hover{
+    color: #fff;
+}
+
+.container1{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    column-gap: 20px;
+    /* box-shadow: 2px 2px 10px rgba(136, 132, 132, 0.6); */
+
+}
+.shirt{
+    height: 400px;
+    width: 280px;
+    border: 2px solid #808080;
+    border-radius: 10px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction:column;
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+
+}
+.shirt-img{
+    height: 270px;
+    width: 240px;
+    border-radius: 10px;
+    justify-content: center;    
+    padding: 10px;
+    background-color: #eee;
+    transition: 1s;
+}
+.shirt-img:hover{
+    transform: scale(1.1);
+    z-index: 1;
+}
+.ki{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+   letter-spacing: 0.5px;
+   color: #808080;
+}
+.para{
+    color: black;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    letter-spacing: 0.5;
+}
+.icon-star{
+    color: orange;
+}
+.price{
+    font-size: 20px;
+    color: #222222;
+    font-family: sans-serif;
+    font-weight: 500;
+}
+.price:hover{
+    color: #7707cd;
+    font-weight: 700;
+    font-size: 19px;
+}
+.rupes{
+    display: flex;
+    color:#222222;
+    column-gap: 7rem;
+    cursor: pointer;
+}
+.rupes:hover{
+    color: green;
+
+}
+.rupes ion-icon{
+    font-size: 40px;
+    cursor: pointer;
+}
+#box-button{
+display: flex;
+justify-content: center;
+align-items: center;
+column-gap: 15px;
+
+}
+.box-btn{
+height: 30px;
+width: 40px;
+border: 2px solid #030303;
+background-color: #a017cd;
+cursor: pointer;
+border-radius: 3px;
+
+}
+
+.box-btn h1{
+display: flex;
+justify-content: center;
+align-items: center;
+background-size: 100%;
+
+color: #eee;
+}
+.box-next{
+height: 30px;
+width: 75px;
+display: flex;
+align-items: center;
+justify-content: center;
+font-weight: 300px;
+border: 1px solid black;
+font-size: 12px;
+cursor: pointer;
+/* background-color: #eee; */
+background-color: #a916e8;
+border-radius: 3px;
+}
+
+
+
+
+#last-search{
+display: flex;
+justify-content: center;
+flex-wrap: wrap;
+width: 100%;
+  filter: contrast(100%);
+}
+.search-box{
+height: 25vh;
+width: 100%;
+background-color:#000033;
+
+}
+.search-box h1{
+color: #fff;
+font-size: 30px;
+font-family:  sans-serif;
+/* margin-left: 40px; */
+display: flex;
+justify-content: flex-start;
+
+padding: 10px;
+
+}
+.search-btn{
+display: flex;
+justify-content:center;
+align-items: center;
+
+}
+.search-box span{
+color: #eee;
+margin-left: 40px;
+font-size: 20px;
+font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+font-weight: 300px;
+}
+.search-btn input{
+outline: none;
+font-size: 20px;
+font-weight: 300px;
+height: 30px;
+border-radius: 3px;
+}
+.search-btn button{
+height: 30px;
+width: 70px;
+font-weight: 700px;
+cursor: pointer;
+background-color: #f5c824;
+color: #030303;
+}
+#last-search .search-btn button:hover{
+font-weight: 500px;
+box-sizing: border-box;
+background-color: transparent;
+color: #fff;
+
+}
+#main-container {
+display: flex;
+justify-content: center;
+align-items: center;
+background-color: #030303;
+flex-wrap: wrap;
+}
+.main-box1{
+height: 350px;
+width: 300px;
+
+}
+
+#main-container  .main-box1 h1{
+color: #fff;
+margin-left: 10px;
+font-size: 25px;
+font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+font-weight: 500px;
+letter-spacing: 0.58;
+
+}
+#main-container .main-box1 span{ 
+margin-left: 10px;
+}
+#main-container .main-box1 h2{
+color: #fff;
+display: flex;
+margin-left: 10px;
+font-family:sans-serif;
+letter-spacing: 0.99px;
+}
+#main-container .main-box1 p{
+color: #fff;
+font-size: 17px;
+font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+padding: 20px;
+letter-spacing: 0.25;
+cursor: pointer;
+} 
+
+.google-play button{
+
+font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+width: 120px;
+letter-spacing: 0.98;
+height: 40px;
+font-weight: 400px;
+justify-content: space-around;
+margin-left: 20px;
+cursor: pointer;
+        
+
+}
+
+.google-play button ion-icon{
+font-size: 20px;
+margin-right: 17px;
+
+}
+.main-box1  .google-pay p{
+color: #fff;
+display: flex;
+font-size: 17PX;
+letter-spacing: 0.99;
+font-family: Verdana, Geneva, Tahoma, sans-serif;
+text-align: center;
+justify-content: center;
+align-items: center;
+
+}
+.visa-card-container{
+display: flex;
+align-items: center;
+column-gap: 5px;
+}
+.visa-card{
+font-size: 20px;
+height: 20px;
+width: 90px;
+background-size: auto;
+cursor: pointer;
+
+}
+.maseter{
+height: 60px;
+width: 70px;
+cursor: pointer;
+
+}
+.debit-card{
+height: 40px;
+width: 50px;
+cursor: pointer;
+}
+
+.social{
+    color: #fff;
+    display: flex;
+    column-gap: 10px;
+    font-size: 25px;
+    justify-content: center;
+    }
+    .main-box1 h2{
+    display: flex;
+    justify-content: space-evenly;
+    
+    }
+    
+    

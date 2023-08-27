@@ -1,0 +1,110 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body{
+    background-color: #000000;
+}
+#container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    right: 0%;
+    bottom: 10px;
+    flex-wrap: wrap;
+
+}
+.box-container{
+    height: 500px;
+    width: 400px; 
+    background-color: aliceblue;
+    /* background-color: #0b0a0b; */
+    border: 1px solid black;
+    box-shadow: #e2e3e9;
+
+    
+}
+.input-box{
+    margin-left: 10%; 
+}
+input{
+    height: 40px ;
+    width: 70%;
+    margin-bottom: 40px;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    font-size: 20px;
+    border-bottom: 2px solid #0b0a0b;
+    /* outline: none; */
+}
+h1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    letter-spacing: 1pt; 
+    font-size: 40px;
+    font-family: sans-serif;
+    
+}
+.input-box h1{
+    padding: 30px;
+}
+::placeholder{
+    font-size: 20px;
+    color: #0b0a0b;
+    font-weight: 500px;
+
+}
+input:hover{
+    outline: none;
+}
+.input-box ion-icon {
+    font-size: 35px;
+    margin-right: 15px;
+    color: #0b0a0b;
+}
+.button{
+    width: 60%;
+    height: 50px;
+    font-size: 30px;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande';
+    cursor: pointer;
+    margin-left: 23%;
+    /* background-color: rgb(27, 7, 203); */
+    border-radius: 10px;
+}
+h2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-decoration: none;
+    letter-spacing: 0.05px;
+    opacity: 2.24;
+}
+.social{
+    font-size: 40px;
+    margin-left: 20%;
+    cursor: pointer;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    line-height: 50px;
+    border: #f5f6fa;
+    box-shadow: #dcdde1;
+}
+.img1{
+    height: 500px;
+    width: 400px;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+body{
+    /* background: url('background-user1.jpg'); */
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
