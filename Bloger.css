@@ -2,192 +2,359 @@
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
+
 }
-#header{
-    background-image: url('IMAGE/1.jpg');
-    height: 50vh;
-    background-size: 100%;
+.carousel-item{
+    filter: contrast(120%);
     background-size: cover;
-   
 }
-.header-text h1{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 47px;
-    color: #fff;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-
-}
-.header-text p{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: #fff;
-    font-size: 30px;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-}
-#main-container{
-    display: flex;
-    justify-content: center;
-    padding: 30px;
-
-    
-     
-}
-.box{
-    height: 307px;
-    width:500px;
-    border: 3px solid rgba(136, 132, 132, 0.6); ;
-    margin-left: 6rem;
-    box-shadow: 2px 2px 10px rgba(136, 132, 132, 0.6);
-    
-   
-}
-.image1{
-     height: 300px;
-     width: 310px; 
-     background-size: cover;
-     background-size: 100%;
-     filter: contrast(100%);
-
-    
-}
-.review{
-    float: right;
-
-}
-.review p{
+.nav-item{
     font-size: 20px;
-    display: flex;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    justify-content: center;
-    margin-left: 40px;
-    color: gray;
+    font-weight: 300;
+    font-family: sans-serif;
+    letter-spacing: 0.54px;
+    color: #E2E2E2;
+    
 }
-.review h1{
-    font-style: 50px;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    margin-left: 40px;
-    padding: 20px;
+.nav-item:hover{
+    background-color: white; 
+    border-radius: 5px;
+    color: #030303;
+    transition: .95s;
+    
+
 }
-.review span{
-    margin-left: 40px;
-    cursor: pointer;
+.btn {
     color: black;
     font-size: 20px;
-    font-weight: 300px;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: sans-serif;
+
 }
-.review span:hover{
-    color: blue;
-    font-size: 21px;
-    font-weight: 300px;
+.btn:hover{
+    background-color: orange;
+    transition: .90s;
 }
-#last-search{
+.navbar-brand{
+    font-size: 25x;
+    font-family: sans-serif;
+    font-weight: 400;
+    color: rgb(80, 4, 143);
+   filter: drop-shadow(120%);
+}
+#frame-cont{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.frame-child{
+    height: 650px;
+    width: 700px;
+    filter: contrast(140%);
+    /* border: 1px solid black; */
+    background: url('IMAGE/fram1.jpg');
+   
+}
+.frame-child1{
+    width: 600px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.card-header{
+    font-size: 25px;
+    font-family: sans-serif;
+    font-weight: 400;
+
+}
+
+.img-fluid{
+    height: 200px;
+    width: 500px;
+    filter:contrast(100%)
+}
+.frame-text h1{
+   
+    height: 300px;
+    width: 20       0px;
+    display: flex;
+    float: right;
+    bottom: 30%;
+    font-size: 30px;
+    font-family: Impact, Haettenschweiler, sans-serif;
+    letter-spacing: 0.74px;
+}
+.frame-text p{
+    font-size: 10px;
+
+   
+}
+.card-img-top{
+    filter: contrast(120%);
+}
+.card-title{
+    font-size: 30px;
+}
+#card .card-body{
+    background: linear-gradient(#C9D6FF,#E2E2E2);
+}
+#card2 .card-title{
+    font-size: 3rem;
+    font-family: sans-serif;
+}
+#card2 .card-title1{
+    font-size: 30px;
+    font-family: sans-serif;
+}
+#card2 .text-body-primary{
+    font-size: 23px;
+    cursor: pointer;
+  
+    height: 40px;
+    width: 100px;
+}
+#card2 .text-body-primary:hover{
+  
+    color: rgb(255, 6, 6);
+    transition: .98s;
+}
+#main-container {
 display: flex;
 justify-content: center;
+align-items: center;
+background-color: #030303;
 flex-wrap: wrap;
-width: 100%;
-  filter: contrast(100%);
-
-
+}
+.main-box1{
+height: 350px;
+width: 300px;
 
 }
-.search-box{
-height: 25vh;
-width: 100%;
-background-color:#000033;
-
-}
-.search-box h1{
-color: #fff;
-font-size: 30px;
-font-family:  sans-serif;
-/* margin-left: 40px; */
-display: flex;
-justify-content: flex-start;
-
-padding: 10px;
-
-}
-.search-btn{
-display: flex;
-justify-content:center;
-align-items: center;
-
-
-
-}
-.search-box span{
+#main-container ul li{
+font-size: 20px;
 color: #eee;
-margin-left: 40px;
-font-size: 20px;
-font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-font-weight: 300px;
+font-family: sans-serif;
+text-decoration: none;
+font-weight: 400;
+text-decoration: none;
+list-style: none;
+row-gap: 10px;
 }
-.search-btn input{
-outline: none;
-font-size: 20px;
-font-weight: 300px;
-height: 30px;
-border-radius: 3px;
-}
-.search-btn button{
-height: 30px;
-width: 70px;
-font-weight: 700px;
+#main-container ul li:hover{
+color: green;
 cursor: pointer;
-background-color: #f5c824;
-color: #030303;
+text-decoration: underline;
 }
-.search-btn button:hover{
-font-weight: 500px;
-box-sizing: border-box;
-background-color: transparent;
+#main-container  .main-box1 h1{
 color: #fff;
+margin-left: 10px;
+font-size: 25px;
+font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+font-weight: 500px;
+letter-spacing: 0.58;
 
 }
-#box-button{
+#main-container .main-box1 span{ 
+margin-left: 10px;
+}
+#main-container .main-box1 h2{
+color: #fff;
 display: flex;
+margin-left: 10px;
+font-family:sans-serif;
+letter-spacing: 0.99px;
+}
+#main-container .main-box1 p{
+color: #fff;
+font-size: 17px;
+font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+padding: 20px;
+letter-spacing: 0.25;
+cursor: pointer;
+} 
+
+.google-play button{
+
+font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+width: 120px;
+letter-spacing: 0.98;
+height: 40px;
+font-weight: 400px;
+justify-content: space-around;
+margin-left: 20px;
+cursor: pointer;
+
+
+}
+
+.google-play button ion-icon{
+font-size: 20px;
+margin-right: 17px;
+
+}
+.main-box1  .google-pay p{
+color: #fff;
+display: flex;
+font-size: 17PX;
+letter-spacing: 0.99;
+font-family: Verdana, Geneva, Tahoma, sans-serif;
+text-align: center;
 justify-content: center;
 align-items: center;
+
+}
+.visa-card-container{
+display: flex;
+align-items: center;
+column-gap: 5px;
+}
+.visa-card{
+font-size: 20px;
+height: 20px;
+width: 90px;
+background-size: auto;
+cursor: pointer;
+
+}
+.maseter{
+height: 60px;
+width: 70px;
+cursor: pointer;
+
+}
+.debit-card{
+height: 40px;
+width: 50px;
+cursor: pointer;
+}
+
+
+.social{
+color: #fff;
+display: flex;
 column-gap: 10px;
+font-size: 25px;
+justify-content: center;
+}
+.main-box1 h2{
+display: flex;
+justify-content: space-evenly;
+
+}
+.checkbtn{
+font-size: 40px;
+}
+.social ion-icon{
+font-size: 30px;
+color: rgb(209, 138, 7);
+font-weight: 300;
+}
+
+
+
+
+.topnav {
+overflow: hidden;
+background-color: #030a44;
+}
+
+
+.topnav a {
+float:left;
+
+display: block;
+color: #f2f2f2;
+text-align: center;
+padding: 14px 16px;
+text-decoration: none;
+font-size: 20px;
+font-family:sans-serif;
+cursor: pointer;
+font-weight: 300;
+}
+
+.topnav a:hover {
+background-color: #ddd;
+color: black;
+transition: all .87s;
+}
+
+.topnav a.active {
+background-color: #e60c9d;
+color: white;
+transition: .89s;
 
 }
 
-.box-btn{
-height: 30px;
-width: 40px;
-border: 2px solid #030303;
-background-color: #a916e8;
+.topnav .icon {
+display: none;
+}
 
-cursor: pointer;
-border-radius: 3px;
+@media screen and (max-width: 600px) {
+.topnav a:not(:first-child) {display: none;}
+.topnav a.icon {
+float: right;
+display: block;
+}
+}
+
+@media screen and (max-width: 600px) {
+.topnav.responsive {position: relative;}
+.topnav.responsive .icon {
+position: absolute;
+right: 0;
+top: 0;
+}
+.topnav.responsive a {
+float: none;
+display: block;
+text-align: left;
+}
+}
+.search input{
+height: 40px;
+padding: 10px;
+float: right;
+font-size: 15px;
+font-family: sans-serif;
+font-weight: 500;
+margin-right: 20px;
+
+
+
+}
+::placeholder{
 color: #030303;
 
 }
+.search button{
+float: right;
+height: 40px;
+margin-right: 20px;
 
-.box-btn h1{
-display: flex;
-justify-content: center;
-align-items: center;
-background-size: 100%;
-color:#030303;
 }
-.box-next{
-height: 30px;
-width: 75px;
-display: flex;
-align-items: center;
-justify-content: center;
-font-weight: 300px;
-border: 1px solid black;
-font-size: 12px;
+.search button ion-icon {
+font-size: 35px;
+cursor:progress;
+
+}
+.dark-b{
+height: 50px;
+width: 40px;
 cursor: pointer;
-/* background-color: #eee; */
-background-color: #a916e8;
-border-radius: 3px;
 }
 
 
+
+.dark-mode{
+    background-color: black;
+    color: white;
+}
+@media screen and (max-width: 773px) {
+.search button{
+display: none;
+}
+input{
+display: none;
+float: none;
+text-align: left;
+}
+}

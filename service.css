@@ -1,0 +1,401 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+#container-image .nav-item{
+    color: #eee;
+}
+#container-image .nav-link{
+    font-size: 23px;
+    font-family: sans-serif;
+    background-color: transparent;
+    color: #000;
+    cursor: pointer;
+}
+#container-image .navbar-brand{
+    color: #000;
+    font-size: 25px;
+    font-family: sans-serif;
+    cursor: pointer;
+}
+#container-image .nav-link:hover{
+    background-color: transparent;
+    
+}
+.dark-b{
+    height: 50px;
+    width: 40px;
+    cursor: pointer;
+    }
+  
+    
+
+    .dark-mode{
+        background-color: black;
+        color: white;
+    }
+    #container-parent{
+    display: flex;
+    justify-content:space-evenly;
+    flex-wrap: wrap;
+    gap: 10px;
+    border-radius: 10px;
+}
+
+.container-child{
+    height: 280px;
+    width: 310px;
+    border-radius: 10px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+}
+.container-child:hover{
+    filter: contrast(140%);
+    cursor: pointer;
+    animation: bounc 1.15s  infinite;
+}
+@keyframes bounc{
+        0%,100%{
+            transform: translateY(0);
+        }
+        50%{
+            transform: translateY(-20px);
+        }
+    }
+.container-child h1{
+    font-size: 30px;
+  
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+#counter{
+    font-size: 4rem;
+    display: flex;
+    justify-content: center;
+    
+}
+#counte{
+    font-size: 4rem;
+    display: flex;
+    justify-content: center;
+   
+
+}
+#count{
+    font-size: 4rem;
+    display: flex;
+    justify-content: center;
+    
+    
+}
+#cons{
+    font-size: 4rem;
+    display: flex;
+    justify-content: center;
+
+}
+.counters{
+    height: 100px;
+    width: 100px;
+    display: flex;
+    justify-content: center;
+  
+
+}
+.icon-1{
+    display: flex;
+    font-size: 5rem;
+    color: #737470  ;
+    justify-content: center;
+    filter: contrast(130%);
+}
+#container-parent  h3{
+
+    font-size: 20px;
+    text-align: center;
+
+}
+#container-parent  h1{
+
+font-size: 30px;
+text-align: center;
+color: rebeccapurple;
+
+}
+
+.box-text{
+display: flex;
+justify-content: center;
+align-items: center;
+font-size: 30px;
+font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.head-text{
+text-align: center;
+font-size: 40px;
+font-family: sans-serif;
+text-transform: uppercase;
+font-weight: 500;
+
+}
+#card-box{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    background-color: purple;
+}
+.card-box-child{
+    height: 530px;
+    width: 700px;
+      }
+.card-image-1{
+    display: flex;
+    justify-content: center;
+   
+}
+.card-img-g{
+    height: 500px;
+    width: 400px;
+    filter: contrast(160%);
+
+}
+#card-icon-b .card-img-top{
+    font-size: 10rem;
+}
+#card-box p{
+    font-size: 20px;
+    color: #eee;
+}
+#card-box h1{
+    color: #eee;
+}
+#card-box Button{
+    height: 50px;
+    width: 150px;
+    font-size: 25px;
+    font-family: sans-serif;
+    font-weight: 400;
+    background-color : #eee;
+    color: #000;
+}
+#card-box Button:hover{
+    background-color: purple;
+    color: #eee;
+    transition: .89s;
+}
+.nav-item{
+    color: #eee;
+}
+.nav-item:hover{
+    background-color: #eee;
+
+}
+.review h1{
+
+    text-align: center;
+    text-transform: uppercase;
+    font-family: sans-serif;
+}
+#review-card .card-img-top{
+  
+    filter: contrast(140%);
+    cursor: pointer;
+}
+#review-card .card-img-top:hover{
+    filter:grayscale(150%);
+
+    
+}
+#logo{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    columns: 5;
+}
+.logo-card{
+    height: 105px;
+   
+    width: 200px;
+    /* border-radius: 50%; */
+}
+#logo .logo-img{
+    height: 100px;
+    width: 170px;
+    filter: contrast(140%);
+ 
+
+}
+
+/* @media(max-width:400px){
+    .logo-card{
+        height: 200px;
+        width: 400px;
+    }
+    
+
+} */
+#from-c{
+    display: flex;
+    justify-content:center;
+    flex-wrap: wrap;
+
+}
+#from-c .col-sm-2{
+    font-size: 20px;
+    font-family: sans-serif;
+}
+#from-c .form-check-label{
+    font-size: 20px;
+    font-family: sans-serif;
+}
+#from-c .btn{
+    font-size: 24px;
+}
+
+
+
+.box-from{
+height: 650px;
+width: 650px;
+
+
+
+}
+.frame{
+height: 600px;
+width: 700px;
+filter: contrast(140%);
+}
+
+#main-container {
+display: flex;
+justify-content: center;
+align-items: center;
+background-color: #030303;
+flex-wrap: wrap;
+}
+
+.main-box1{
+height: 350px;
+width: 300px;
+
+}
+#main-container ul li{
+font-size: 20px;
+color: #eee;
+font-family: sans-serif;
+text-decoration: none;
+font-weight: 400;
+text-decoration: none;
+list-style: none;
+row-gap: 10px;
+}
+#main-container ul li:hover{
+color: green;
+cursor: pointer;
+text-decoration: underline;
+}
+
+#main-container  .main-box1 h1{
+color: #fff;
+margin-left: 10px;
+font-size: 25px;
+font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+font-weight: 500px;
+letter-spacing: 0.58;
+
+}
+#main-container .main-box1 span{ 
+margin-left: 10px;
+}
+#main-container .main-box1 h2{
+color: #fff;
+display: flex;
+font-family:sans-serif;
+letter-spacing: 0.99px;
+}
+#main-container .main-box1 p{
+color: #fff;
+font-size: 17px;
+font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+padding: 20px;
+letter-spacing: 0.25;
+cursor: pointer;
+} 
+
+.google-play button{
+
+font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+width: 120px;
+letter-spacing: 0.98;
+height: 40px;
+font-weight: 400px;
+justify-content: space-around;
+margin-left: 20px;
+cursor: pointer;
+    
+
+}
+
+.google-play button ion-icon{
+font-size: 20px;
+margin-right: 17px;
+
+}
+.main-box1  .google-pay p{
+color: #fff;
+display: flex;
+font-size: 17PX;
+letter-spacing: 0.99;
+font-family: Verdana, Geneva, Tahoma, sans-serif;
+text-align: center;
+justify-content: center;
+align-items: center;
+
+}
+.visa-card-container{
+display: flex;
+align-items: center;
+column-gap: 5px;
+}
+.visa-card{
+font-size: 20px;
+height: 20px;
+width: 90px;
+background-size: auto;
+cursor: pointer;
+
+}
+.maseter{
+height: 60px;
+width: 70px;
+cursor: pointer;
+
+}
+.debit-card{
+height: 40px;
+width: 50px;
+cursor: pointer;
+}
+
+
+.social{
+color: #fff;
+display: flex;
+column-gap: 10px;
+font-size: 25px;
+justify-content: center;
+}
+.main-box1 h2{
+display: flex;
+justify-content: space-evenly;
+
+}
+.checkbtn{
+font-size: 40px;
+}
+.social ion-icon{
+font-size: 30px;
+color: rgb(209, 138, 7);
+font-weight: 300;
+}
+

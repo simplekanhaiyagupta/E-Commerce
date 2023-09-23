@@ -2,128 +2,327 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Blog page</title>
-  <link rel="stylesheet" href="Bloger.css">
-
-    
-
-
-
-
-
-    
-
+    <title>Document</title>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.min.js" integrity="sha384-Rx+T1VzGupg4BHQYs2gCW9It+akI2MM/mndMCy36UVfodzcJcF0GGLxZIzObiEfa" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="	https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js">
+    <link rel="stylesheet" href="	https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="Bloger.css">
 </head>
 <body>
-    <section id="header">
-        
+    <section>
+            <nav class="navbar navbar-expand-lg bg-body-primary" style="background-color: #5a65c9;">
+                <div class="container-fluid">
+    
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="index.html">HOME</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#main-container">ABOUT</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="shop.html">SHOP</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="contact.html">CONTACT</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="Blog.html">BLOG</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="service.html">SERVICES</a>
+                    </li>
+                    
+                    </ul>
+                    <ion-icon name="contrast" class="dark-b"  onclick="My_function()"></ion-icon>
+                    
+                    <script>
+                        function My_function(){
+                            var e = document.body;
+                            e.classList.toggle("dark-mode");
+                        }
+                    </script>
+                    <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                    </form>
+                    
+                   
+                </div>
+                </div>
+                
+            </nav>
+           
+    </section>
+    <section>
+            <div id="carouselExample" class="carousel slide">
+                <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="IMAGE/blog1.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="IMAGE/blog3.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="IMAGE/blog5.webp" class="d-block w-100" alt="...">
+                </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+    </section > 
+    <section id="card-box">
+            <div class="card text-center ">
+                <div class="card-header">
+                Featured of sell.
+                </div>
+                <div class="card-body">
+                <h1 class="card-title">Special title get one more chance.</h1>
+                <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                <a href="#" class="btn btn-primary">Go Somewhere</a>
+                </div>
+                <div class="card-footer text-body-light">
+                3 days ago lets now.
+                </div>
+            </div>
     </section><br><br>
-    <section id="main-container">
-        <div class="box"> 
-            <img src="IMAGE/blog-girl6.jpg" class="image1">
-        </div>
-        <div class="review">
-            <h1>#FAISHAN  LOOK FOR NEW DESIGN   </h1>
-            <p>Free Photo | Indoor shot of adorable female buyer
-            spending her free time in boutique,<br> standing near dummy with 
-            clothes, reading news online while using <br>free internet connection.
-            shop assistant selling clothes
-            Free Photo |Indoor shot of adorable female buyer
-            spending her free time in boutique, standing near dummy with clothes, reading <br>news online
-            while using free internet connection.
-                shop assistant selling clothes
-                
-            </p>
-            <span>Continue this page_____</span>
-        </div>
-
-                
-    </section>
-
-    <section id="main-container">
-        <div class="box"> 
-            <img src="IMAGE/blog-girl8.jpg" class="image1">
-        </div>
-        <div class="review">
-            <h1>wireless headphones, smiling and dance </h1>
-            <p>Free Photo | Indoor shot of adorable female buyer
-             spending her free time in boutique,<br> standing near dummy with 
-             clothes, reading news online while using <br>free internet connection.
-              shop assistant selling clothes
-              Free Photo |Indoor shot of adorable female buyer
-               spending her free time in boutique, standing near dummy with clothes, reading <br>news online
-               while using free internet connection.
-                shop assistant selling clothes
-            </p>
-            <span>Continue this page_____</span>
-        </div>
-
-                
-    </section>
-
-    <section id="main-container">
-        <div class="box"> 
-            <img src="IMAGE/blog-girl5.jpg" class="image1">
-        </div>
-        <div class="review">
-            <h1>Premium Photo | Beautiful modern girl </h1>
-            <p>Free Photo | Indoor shot of adorable female buyer
-             spending her free time in boutique,<br> standing near dummy with 
-             clothes, reading news online while using <br>free internet connection.
-              shop assistant selling clothes
-              Free Photo |Indoor shot of adorable female buyer
-               spending her free time in boutique, standing near dummy with clothes, reading <br>news online
-               while using free internet connection.
-                shop assistant selling clothes
-            </p>
-            <span>Continue this page_____</span>
-        </div>
-
-                
-    </section>
-    <section id="main-container">
-        <div class="box"> 
-            <img src="IMAGE/blog-girl7.jpg" class="image1">
-        </div>
-        <div class="review">
-            <h1>#FAISHAN DESIGN  OF THE SHOPING </h1>
-            <p>Free Photo | Indoor shot of adorable female buyer
-             spending her free time in boutique,<br> standing near dummy with 
-             clothes, reading news online while using <br>free internet connection.
-              shop assistant selling clothes
-              Free Photo |Indoor shot of adorable female buyer
-               spending her free time in boutique, standing near dummy with clothes, reading <br>news online
-               while using free internet connection.
-                shop assistant selling clothes
-            </p>
-            <span>Continue this page_____</span>
-        </div> 
-    </section>  
-
-    <section id="box-button">
-        <div class="box-next"><h1>Previous</h1></div>
-        <div class="box-btn"><h1>1</h1> </div>
-        <div class="box-btn"><h1>2</h1></div>
-        <div class="box-btn"><h1>3</h1></div>
-        <div class="box-next"><h1>Next</h1></div>
-
-
-    </section><br><br>
-
-    <section id="last-search">
-        <div class="search-box">
-            <h1>Search For New Update </h1>
-            <span>Get-Gmail upadte about shop and special offer get-start.</span>
-            <div class="search-btn">
-                <input type="search" placeholder="Enter search here">
-                <button>Sign-Up</button>
+    
+            
+    
+    <section id="frame-cont">
+            <div class="frame-child">
+                <div class="frame-text ">
+                    <h1>Street Wear Woolen Hat.<br>
+                        Get 25% Off Discount Coupons.
+                    </h1>
+                    
+                </div>
+            </div>
+            <div class="frame-child1">
+                <div class="card mb-3" style="max-width: 540px;">
+                    <div class="row g-0">
+                    <div class="col-md-4">
+                        <img src="IMAGE/frame3.jpg" class="img-fluid rounded-start" alt="...">
+                    </div>
+                    <div class="col-md-8">
+                        <div class="card-body">
+                        <h5 class="card-title">Summer collection</h5>
+                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                        <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+                <div class="card mb-3" style="max-width: 540px;">
+                    <div class="row g-0">
+                    <div class="col-md-4">
+                        <img src="IMAGE/frame2.jpg" class="img-fluid rounded-start" alt="...">
+                    </div>
+                    <div class="col-md-8">
+                        <div class="card-body">
+                        <h5 class="card-title">New Shows </h5>
+                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                        <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+            </div>
+    </section><br>
+        <div class="card-group">
+            <div class="card">
+            <img src="IMAGE/1-img.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">Half Sleeve T-Shirt
+                    $40.00</h5>
+                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+            </div>
+            </div>
+            <div class="card">
+            <img src="IMAGE/2-img.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">Stylish Grey T-Shirt
+                    $35.00</h5>
+                <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+                <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+            </div>
+            </div>
+            <div class="card">
+            <img src="IMAGE/4-img.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">Grunge Hoodie
+                    $30.00</h5>
+                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+                <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+            </div>
             </div>
         </div>
-    </section><br><br><br> 
-   
+    <section>
+    </section>
+    <section id="card">
+        <div class="card text-center ">
+            <div class="card-header">
+            </div>
+                <div class="card-body ">
+                <h1 class="card-title ">Special title treatment</h1>
+                <p class="card-text">With supporting text below as a natural 
+                    Latest Trends Of Wearing Street<br> Wears Supremely
+                    TRENDINGlead-in to additional <br>
+                    Latest Trends Of Wearing Street Wears Supremely
+                    TRENDINGcontent.</p>
+                <a href="#" class="btn btn-secondary">Go Collection</a>
+                </div>
+            </div>
+    </section><br><br>
+    <section id="card2">
+            <div class="card text-center ">
+                <div class="card-body ">
+                <h1 class="card-title ">Jewellery Accessories</h1>
+                </div>
+            </div>
 
-   
+            <div class="card-group">
+                <div class="card">
+                <img src="IMAGE/jew.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title1">Jumkas
+                        Start Price $ 100</h5>
+                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                    <p class="card-text"><small class="text-body-primary">Buy now -> </small></p>
+                </div>
+            </div>
+            <div class="card">
+                <img src="IMAGE/jew1.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title1">Necklaces
+                        Start Price $ 100</h5>
+                    <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+                    <p class="card-text"><small class="text-body-primary">Buy now-> </small></p>
+                </div>
+                </div>
+                <div class="card">
+                <img src="IMAGE/jew2.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title1">Kangans
+                    Start Price $ 100
+                    
+                    </h5>
+                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+                <p class="card-text"><small class="text-body-primary">Buy now-> </small></p>
+                </div>
+                </div>
+            </div>
+    </section><br><br>
+    <section>
+            <nav aria-label="Page navigation example">
+                <ul class="pagination justify-content-center">
+                <li class="page-item disabled">
+                    <a class="page-link">Previous</a>
+                </li>
+                <li class="page-item"><a class="page-link" href="#">1</a></li>
+                <li class="page-item"><a class="page-link" href="#">2</a></li>
+                <li class="page-item"><a class="page-link" href="#">3</a></li>
+                <li class="page-item">
+                    <a class="page-link" href="#">Next</a>
+                </li>
+                </ul>
+            </nav>
+        </section>
+    <section id="button-exp">
+        <div class="text-center">
+            <div class="spinner-border" role="status">
+                <span class="visually-hidden">Loading...</span>
+                </div>
+            </div>
+            
+    </section><br>
+
+        
+    <section id="main-container">
+        <div class="main-box1">
+        
+            <h2>ABOUT</h2><br>
+            <ul>
+                <li>Sells on ecommerce</li>
+                <li>Sell under Ecommerce Accelet</li>
+                <li>Protect and Build your Brand</li>
+                <li>Ecommerce Global Selling </li>
+                
+                <li>Protect and Build your Brand</li>
+                <li>Prevecy Police Product </li>
+                <li>Terms & condition</li>
+               
+            </ul>
+        </div>
+        <div class="main-box1">
+            <h1>My Account </h1><br>
+            <ul>
+                <li>Card Transction function </li>
+                <li>Sell   Ecommerce Acceletor</li>
+                <li>Trace on Order</li>
+                <li>Ecommerce Global Selling </li>
+                <li>Visit My Accound </li>
+                <li>Adverties Your Product </li>
+                 <li>Prevecy Police Product </li>
+               
+               
+            </ul>
+
+
+        </div>
+        <div class="main-box1">
+            <h1>Contact Us</h1><br>
+            <ul>
+                <li>Address : Bihar Patna</li>
+                <li>Phone: +990002243 +9144956749</li>
+                <li> Hours:10.00-18.00 Mon-sat</li>
+                <li>Visit My Accound </li>
+              
+            </ul>
+            <h2 >Follows Us</h2><br>
+            <div class="social">
+                <a href="https://www.instagram.com/kanhaiya101020/"> <ion-icon name="logo-instagram"></ion-icon></a> 
+                <a href="https://web.whatsapp.com/"><ion-icon name="logo-whatsapp"></ion-icon></a>
+                <a href="https://www.facebook.com/profile.php?id=100010786959601"><ion-icon name="logo-facebook"></ion-icon></a>
+                <a href="#"><ion-icon name="logo-twitter"></ion-icon></a>
+                <a href="https://www.linkedin.com/in/kanhaiya-kumar-213435258/"><ion-icon name="logo-linkedin"></ion-icon></a>
+                <a href="https://github.com/login"><ion-icon name="logo-github"></ion-icon></a>
+
+            </div>
+
+
+        </div>
+        <div class="main-box1">
+            <h1>Install app</h1>
+                <p>Form App store or Google Play</p>
+                    <div class="google-play">
+                    <button><ion-icon name="logo-apple"></ion-icon>App Store</button>
+                    <button><ion-icon name="logo-google-playstore" class="play-store"></ion-icon>Google Play</button>
+        </div>
+            <p>Secured Patym Gatway</p>
+            <div class="visa-card-container">
+                <img src="IMAGE/visa1.png" class="visa-card">
+                <img src="IMAGE/mastercard3.png" class="maseter">
+                <img src="IMAGE/mastercard4.png" class="maseter">
+                <img src="IMAGE/debit-card2.webp" class="debit-card">
+
+            </div>
+        </div>
+    </section>
 </body>
 </html>

@@ -3,15 +3,92 @@
     padding: 0px;
     box-sizing: border-box;
 }
-#poster1{
-    
-
-    background: url('IMAGE/first_shop.avif');
-    /* height: 50vh; */
-    width:100%;
-   
-    background-size: 100%;
+.topnav {
+  overflow: hidden;
+  background-color:  #5a65c9;
 }
+ 
+
+.topnav a {
+    float:left;
+   
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 20px;
+    font-family:sans-serif;
+    cursor: pointer;
+    font-weight: 300;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+  transition: all .87s;
+}
+
+.topnav a.active {
+  background-color: #e60c9d;
+  color: white;
+  transition: .89s;
+
+}
+
+.topnav .icon {
+  display: none;
+}
+
+@media screen and (max-width: 600px) {
+  .topnav a:not(:first-child) {display: none;}
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .topnav.responsive {position: relative;}
+  .topnav.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+}
+.search input{
+    height: 40px;
+    padding: 10px;
+    float: right;
+    font-size: 15px;
+    font-family: sans-serif;
+    font-weight: 500;
+    margin-right: 20px;
+ 
+   
+
+}
+::placeholder{
+    color: #030303;
+   
+}
+.search button{
+    float: right;
+    height: 40px;
+     margin-right: 20px;
+    
+}
+.search button ion-icon {
+    font-size: 35px;
+    cursor:progress;
+
+}
+
  .header-text  {
     display: flex;
     justify-content: center;
@@ -31,6 +108,15 @@ h1{
     color: #000000;
 
 }
+.slid-img{
+    height: 600px;
+    width: 100%;
+    
+    background: url('IMAGE/slid2.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    filter: contrast(150%);
+}
 
 #Shop-now{
     display: flex;
@@ -47,368 +133,383 @@ h1{
 #payment{
     display: flex;
     justify-content: center;
-    align-items: center;
-}
-.from-paymet{
-    height: 600px;
-    width: 600px;
-    border: 2px solid 0px 31px 24px 1px rgba(0, 0, 0, 0.28);
-backdrop-filter: blur(5px);
--webkit-backdrop-filter: blur(5px);
-    border-radius: 9px;
-    background-color:  rgba(255, 255, 255, 0.5);
-    
-    box-shadow:  0px 15px 24px 1px rgba(0, 0, 0, 0.28);
-backdrop-filter: blur(5px);
--webkit-backdrop-filter: blur(5px);
-}
-.from-paymet h1{
-    color: #000000;
-}
-.from-paymet input{
-    width: 40%;
-    height: 40px;
-}
-.card{
-    
-}
-.card1{
-    height: 50px;
-    width: 60px;
-    background-size: cover;
-    background-repeat: no-repeat;
-    cursor: pointer;
-    margin-left: 10px;
-
-}
-.cardv{
-    height: 40px;
-    width: 60px;
-    margin-left: 10px;
-    cursor: pointer;
-}
-.card h2{
-    margin-left: 30px;
-}
-input{
-    margin-bottom: 20px;
-    align-items: center;
-    row-gap: 36px;
-    margin-left: 30px;
-    border-top: none;
-    border-left: none;
-    border-right: none;
-    border-bottom: 2px solid black;
-
-}
-::placeholder{
-    color: #080710;
-    font-weight: 500;
-    
-    font-family: sans-serif;
-}
-input:hover{
-    background-color: ghostwhite;
-    outline: none;
-}
-.payment{
-    width: 85%;
-    height: 50px;
-    margin-left: 33px;
-    font-size: 25px;
-    font-weight: 400;
-    background-color: #10d10a;
-    
-    outline: none;
-    border-top: none;
-    border-left: none;
-    border-right: none;
-    border-bottom: none;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    cursor: pointer;
-
-}
-input{
-    font-size: 17px;
-    font-weight: 300;
-    background: transparent;
-    outline: none;
-}
-.payment:hover{
-    background-color: orange;
-}
-.social ion-icon{
-    color: rgb(250, 167, 13);
-    font-size: 30px;
-    font-weight: 400;
-}
-.social ion-icon:hover{
-    color: #fff;
-}
-
-.container1{
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
-    column-gap: 20px;
-    /* box-shadow: 2px 2px 10px rgba(136, 132, 132, 0.6); */
-
-}
-.shirt{
-    height: 400px;
-    width: 280px;
-    border: 2px solid #808080;
-    border-radius: 10px;
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction:column;
-    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
-
-}
-.shirt-img{
-    height: 270px;
-    width: 240px;
-    border-radius: 10px;
-    justify-content: center;    
-    padding: 10px;
-    background-color: #eee;
-    transition: 1s;
-}
-.shirt-img:hover{
-    transform: scale(1.1);
-    z-index: 1;
-}
-.ki{
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-   letter-spacing: 0.5px;
-   color: #808080;
-}
-.para{
-    color: black;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    letter-spacing: 0.5;
-}
-.icon-star{
-    color: orange;
-}
-.price{
-    font-size: 20px;
-    color: #222222;
-    font-family: sans-serif;
-    font-weight: 500;
-}
-.price:hover{
-    color: #7707cd;
-    font-weight: 700;
-    font-size: 19px;
-}
-.rupes{
-    display: flex;
-    color:#222222;
-    column-gap: 7rem;
-    cursor: pointer;
-}
-.rupes:hover{
-    color: green;
-
-}
-.rupes ion-icon{
-    font-size: 40px;
-    cursor: pointer;
-}
-#box-button{
-display: flex;
-justify-content: center;
-align-items: center;
-column-gap: 15px;
-
-}
-.box-btn{
-height: 30px;
-width: 40px;
-border: 2px solid #030303;
-background-color: #a017cd;
-cursor: pointer;
-border-radius: 3px;
-
-}
-
-.box-btn h1{
-display: flex;
-justify-content: center;
-align-items: center;
-background-size: 100%;
-
-color: #eee;
-}
-.box-next{
-height: 30px;
-width: 75px;
-display: flex;
-align-items: center;
-justify-content: center;
-font-weight: 300px;
-border: 1px solid black;
-font-size: 12px;
-cursor: pointer;
-/* background-color: #eee; */
-background-color: #a916e8;
-border-radius: 3px;
-}
-
-
-
-
-#last-search{
-display: flex;
-justify-content: center;
-flex-wrap: wrap;
-width: 100%;
-  filter: contrast(100%);
-}
-.search-box{
-height: 25vh;
-width: 100%;
-background-color:#000033;
-
-}
-.search-box h1{
-color: #fff;
-font-size: 30px;
-font-family:  sans-serif;
-/* margin-left: 40px; */
-display: flex;
-justify-content: flex-start;
-
-padding: 10px;
-
-}
-.search-btn{
-display: flex;
-justify-content:center;
-align-items: center;
-
-}
-.search-box span{
-color: #eee;
-margin-left: 40px;
-font-size: 20px;
-font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-font-weight: 300px;
-}
-.search-btn input{
-outline: none;
-font-size: 20px;
-font-weight: 300px;
-height: 30px;
-border-radius: 3px;
-}
-.search-btn button{
-height: 30px;
-width: 70px;
-font-weight: 700px;
-cursor: pointer;
-background-color: #f5c824;
-color: #030303;
-}
-#last-search .search-btn button:hover{
-font-weight: 500px;
-box-sizing: border-box;
-background-color: transparent;
-color: #fff;
-
-}
-#main-container {
-display: flex;
-justify-content: center;
-align-items: center;
-background-color: #030303;
-flex-wrap: wrap;
-}
-.main-box1{
-height: 350px;
-width: 300px;
-
-}
-
-#main-container  .main-box1 h1{
-color: #fff;
-margin-left: 10px;
-font-size: 25px;
-font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-font-weight: 500px;
-letter-spacing: 0.58;
-
-}
-#main-container .main-box1 span{ 
-margin-left: 10px;
-}
-#main-container .main-box1 h2{
-color: #fff;
-display: flex;
-margin-left: 10px;
-font-family:sans-serif;
-letter-spacing: 0.99px;
-}
-#main-container .main-box1 p{
-color: #fff;
-font-size: 17px;
-font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-padding: 20px;
-letter-spacing: 0.25;
-cursor: pointer;
-} 
-
-.google-play button{
-
-font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-width: 120px;
-letter-spacing: 0.98;
-height: 40px;
-font-weight: 400px;
-justify-content: space-around;
-margin-left: 20px;
-cursor: pointer;
+        align-items: center;
+    }
+    .from-paymet{
+        height: 600px;
+        width: 600px;
+        border: 2px solid 0px 31px 24px 1px rgba(0, 0, 0, 0.28);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+        border-radius: 9px;
+        background-color:  rgba(255, 255, 255, 0.5);
         
+        box-shadow:  0px 15px 24px 1px rgba(0, 0, 0, 0.28);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    }
+    .from-paymet h1{
+        color: #000000;
+    }
+    .from-paymet input{
+        width: 40%;
+        height: 40px;
+    }
+    .card{
+        
+    }
+    .card1{
+        height: 50px;
+        width: 60px;
+        background-size: cover;
+        background-repeat: no-repeat;
+        cursor: pointer;
+        margin-left: 10px;
 
-}
+    }
+    .cardv{
+        height: 40px;
+        width: 60px;
+        margin-left: 10px;
+        cursor: pointer;
+    }
+    .card h2{
+        margin-left: 30px;
+    }
+    input{
+        margin-bottom: 20px;
+        align-items: center;
+        row-gap: 36px;
+        margin-left: 30px;
+        border-top: none;
+        border-left: none;
+        border-right: none;
+        border-bottom: 2px solid black;
 
-.google-play button ion-icon{
-font-size: 20px;
-margin-right: 17px;
+    }
+    ::placeholder{
+        color: #080710;
+        font-weight: 500;
+        
+        font-family: sans-serif;
+    }
+    input:hover{
+        background-color: ghostwhite;
+        outline: none;
+    }
+    .payment{
+        width: 85%;
+        height: 50px;
+        margin-left: 33px;
+        font-size: 25px;
+        font-weight: 400;
+        background-color: #10d10a;
+        
+        outline: none;
+        border-top: none;
+        border-left: none;
+        border-right: none;
+        border-bottom: none;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        cursor: pointer;
 
-}
-.main-box1  .google-pay p{
-color: #fff;
-display: flex;
-font-size: 17PX;
-letter-spacing: 0.99;
-font-family: Verdana, Geneva, Tahoma, sans-serif;
-text-align: center;
-justify-content: center;
-align-items: center;
+    }
+    input{
+        font-size: 17px;
+        font-weight: 300;
+        background: transparent;
+        outline: none;
+    }
+    .payment:hover{
+        background-color: orange;
+    }
+    .social ion-icon{
+        color: rgb(250, 167, 13);
+        font-size: 30px;
+        font-weight: 400;
+    }
+    .social ion-icon:hover{
+        color: #fff;
+    }
 
-}
-.visa-card-container{
-display: flex;
-align-items: center;
-column-gap: 5px;
-}
-.visa-card{
-font-size: 20px;
-height: 20px;
-width: 90px;
-background-size: auto;
-cursor: pointer;
+    .container1{
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        column-gap: 20px;
+        /* box-shadow: 2px 2px 10px rgba(136, 132, 132, 0.6); */
 
+    }
+    .shirt{
+        height: 400px;
+        width: 280px;
+        border: 2px solid #808080;
+        border-radius: 10px;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction:column;
+        box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+
+    }
+    .shirt-img{
+        height: 270px;
+        width: 240px;
+        border-radius: 10px;
+        justify-content: center;    
+        padding: 10px;
+        background-color: #eee;
+        transition: 1s;
+    }
+    .shirt-img:hover{
+        transform: scale(1.1);
+        z-index: 1;
+    }
+    .ki{
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    letter-spacing: 0.5px;
+    color: #808080;
+    }
+    .para{
+        color: black;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        letter-spacing: 0.5;
+    }
+    .icon-star{
+        color: orange;
+    }
+    .price{
+        font-size: 20px;
+        color: #222222;
+        font-family: sans-serif;
+        font-weight: 500;
+    }
+    .price:hover{
+        color: #7707cd;
+        font-weight: 700;
+        font-size: 19px;
+    }
+    .rupes{
+        display: flex;
+        color:#222222;
+        column-gap: 7rem;
+        cursor: pointer;
+    }
+    .rupes:hover{
+        color: green;
+
+    }
+    .rupes ion-icon{
+        font-size: 40px;
+        cursor: pointer;
+    }
+    #box-button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 15px;
+
+    }
+    .box-btn{
+    height: 30px;
+    width: 40px;
+    border: 2px solid #030303;
+    background-color: #a017cd;
+    cursor: pointer;
+    border-radius: 3px;
+
+    }
+
+    .box-btn h1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-size: 100%;
+
+    color: #eee;
+    }
+    .box-next{
+    height: 30px;
+    width: 75px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 300px;
+    border: 1px solid black;
+    font-size: 12px;
+    cursor: pointer;
+    /* background-color: #eee; */
+    background-color: #a916e8;
+    border-radius: 3px;
+    }
+
+
+
+
+    #last-search{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+    filter: contrast(100%);
+    }
+    .search-box{
+    height: 25vh;
+    width: 100%;
+    background-color:#000033;
+
+    }
+    .search-box h1{
+    color: #fff;
+    font-size: 30px;
+    font-family:  sans-serif;
+    /* margin-left: 40px; */
+    display: flex;
+    justify-content: flex-start;
+
+    padding: 10px;
+
+    }
+    .search-btn{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+
+    }
+    .search-box span{
+    color: #eee;
+    margin-left: 40px;
+    font-size: 20px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: 300px;
+    }
+    .search-btn input{
+    outline: none;
+    font-size: 20px;
+    font-weight: 300px;
+    height: 30px;
+    border-radius: 3px;
+    }
+    .search-btn button{
+    height: 30px;
+    width: 70px;
+    font-weight: 700px;
+    cursor: pointer;
+    background-color: #f5c824;
+    color: #030303;
+    }
+    #last-search .search-btn button:hover{
+    font-weight: 500px;
+    box-sizing: border-box;
+    background-color: transparent;
+    color: #fff;
+
+    }
+    #main-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #030303;
+    flex-wrap: wrap;
+    }
+    .main-box1{
+    height: 350px;
+    width: 300px;
+
+    }
+
+    #main-container  .main-box1 h1{
+    color: #fff;
+    margin-left: 10px;
+    font-size: 25px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 500px;
+    letter-spacing: 0.58;
+
+    }
+    #main-container ul li{
+    font-size: 20px;
+    color: #eee;
+    font-family: sans-serif;
+    text-decoration: none;
+    font-weight: 400;
+    text-decoration: none;
+    list-style: none;
+    row-gap: 10px;
 }
-.maseter{
-height: 60px;
-width: 70px;
-cursor: pointer;
+#main-container ul li:hover{
+    color: green;
+    cursor: pointer;
+    text-decoration: underline;
+}
+    #main-container .main-box1 span{ 
+    margin-left: 10px;
+    }
+    #main-container .main-box1 h2{
+    color: #fff;
+    display: flex;
+    margin-left: 10px;
+    font-family:sans-serif;
+    letter-spacing: 0.99px;
+    }
+    #main-container .main-box1 p{
+    color: #fff;
+    font-size: 17px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    padding: 20px;
+    letter-spacing: 0.25;
+    cursor: pointer;
+    } 
+
+    .google-play button{
+
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    width: 120px;
+    letter-spacing: 0.98;
+    height: 40px;
+    font-weight: 400px;
+    justify-content: space-around;
+    margin-left: 20px;
+    cursor: pointer;
+            
+
+    }
+
+    .google-play button ion-icon{
+    font-size: 20px;
+    margin-right: 17px;
+
+    }
+    .main-box1  .google-pay p{
+    color: #fff;
+    display: flex;
+    font-size: 17PX;
+    letter-spacing: 0.99;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+
+    }
+    .visa-card-container{
+    display: flex;
+    align-items: center;
+    column-gap: 5px;
+    }
+    .visa-card{
+    font-size: 20px;
+    height: 20px;
+    width: 90px;
+    background-size: auto;
+    cursor: pointer;
+
+    }
+    .maseter{
+    height: 60px;
+    width: 70px;
+    cursor: pointer;
 
 }
 .debit-card{
@@ -429,5 +530,113 @@ cursor: pointer;
     justify-content: space-evenly;
     
     }
+    #container-parent{
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 10px;
+        border-radius: 10px;
+    }
+
+    .container-child{
+        height: 280px;
+        width: 310px;
+        border: 1px solid #eee;
+        border-radius: 10px;
+        background-color: rgb(0, 0, 0);
+    }
+    .container-child:hover{
+        background-color: #1524f1ee;
+        color: black;
+        filter: contrast(140%);
+        cursor: pointer;
+        animation: bounc 1.15s  infinite;
+    }
+    @keyframes bounc{
+			0%,100%{
+				transform: translateY(0);
+			}
+			50%{
+				transform: translateY(-20px);
+			}
+		}
+    .container-child h1{
+        font-size: 30px;
+        color: #eee;
+        font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    }
+    #counter{
+        font-size: 5rem;
+        display: flex;
+        justify-content: center;
+        color:#eee;
+
+        
+    }
+    #counte{
+        font-size: 5rem;
+        display: flex;
+        justify-content: center;
+        color:#eee;
+
+    }
+    #count{
+        font-size: 5rem;
+        display: flex;
+        justify-content: center;
+        color:#eee;
+        
+    }
+    #cons{
+        font-size: 5rem;
+        display: flex;
+        justify-content: center;
+        color:#eee;
+
+    }
+    .counters{
+        height: 100px;
+        width: 100px;
+        display: flex;
+        justify-content: center;
+      
+
+    }
+    .icon-1{
+        display: flex;
+        font-size: 6rem;
+        color: #f1f506  ;
+        justify-content: center;
+        filter: contrast(130%);
+    }
+   #container-parent .container-child h1{
+
+        font-size: 40px;
+        color: #eee;
+   }
     
-    
+   .box-text{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+   }
+#big-card{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+}
+.small-card{
+    height: 300px;
+    width: 200px;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+.sm-img{
+    height: 260px;
+    /* width: 160px; */
+    filter: contrast(120%);
+}

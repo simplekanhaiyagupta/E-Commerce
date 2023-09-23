@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.min.js" integrity="sha384-Rx+T1VzGupg4BHQYs2gCW9It+akI2MM/mndMCy36UVfodzcJcF0GGLxZIzObiEfa" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="	https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js">
+    <link rel="stylesheet" href="	https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css">
+    
+    <link rel="stylesheet" href="service.css">
+</head>
+<body>
+    <section id="container-image">
+            <nav class="navbar navbar-expand-lg bg-body-primary" style="background-color: #5a65c9;" >
+                <div class="container-fluid">
+                   
+               
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent" >
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link " aria-current="page" href="index.html">HOME</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " aria-current="page" href="#main-container">ABOUT </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " aria-current="page" href="shop.html">SHOP</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " aria-current="page" href="contact.html">CONTACT</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="Blog.html">BLOG</a>
+                    </li>
+                    <li class="nav-item" >
+                        <a class="nav-link" aria-current="page" href="service.html">SERVICES</a>
+                        
+                    </li>
+                    </ul>
+                    <ion-icon name="contrast" class="dark-b"  onclick="My_function()"></ion-icon>
+                    <script>
+                        function My_function(){
+                            var e = document.body;
+                            e.classList.toggle("dark-mode");
+                        }
+                    </script>
+                   
+                    <form class="d-flex" role="search">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-success" type="submit">Search</button>
+                    </form>
+                </div>
+                </div>
+            </nav>
+
+    </section>
+    <section>
+            <div id="carouselExample" class="carousel slide">
+            <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="IMAGE/service3.jpg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="IMAGE/s2.webp" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="IMAGE/s.webp" class="d-block w-100" alt="...">
+            </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+      </section><br>
+      <div class="head-text">
+        <h1>Our Team Service</h1>
+    </div><br>
+
+    
+        <section id="container-parent">
+            <div class="container-child">
+                    <div class="icon-1"> <ion-icon name="cog"></ion-icon></div>
+                    <div id="counter">
+                    </div>
+                <h1 >OUR SERVICES</h1>
+                <h3>
+                    Service team contribute  the program.
+                </h3>
+        <script>
+            let counts = setInterval(updated);
+            let uptoNumber  = 0;
+            function updated() {
+                let countNum = document.getElementById("counter");
+                countNum.innerHTML = ++uptoNumber;
+                if (uptoNumber ===1230) {
+                    clearInterval(counts);
+                }
+            }
+        </script>
+            </div>
+    
+    
+            <div class="container-child">
+                
+                <div class="icon-1"><ion-icon name="person-add"></ion-icon></div>
+            <div id="counte">
+            </div>
+            <h1 >COMPLETE PRO</h1>
+            <h3 >
+                Service team contribute  the program.
+            </h3>
+        <script>
+        let count = setInterval(updated);
+        let uptoNumbe = 0;
+        function updated() {
+            let countNumb = document.getElementById("counte");
+            countNumb.innerHTML = ++uptoNumbe;
+            if (uptoNumbe === 990) {
+                clearInterval(count);
+            }
+        }
+    </script>
+            </div>
+                
+            <div class="container-child">
+               
+                <div class="icon-1"> <ion-icon name="car"></ion-icon></div>
+            <div id="count">
+            </div>
+            <h1 >HAPPY CLIENTS</h1>
+            <h3>
+                Service team contribute  the program.
+            </h3>
+            <script>
+            let counters = setInterval(updated);
+            let uptoc = 0;
+            function updated() {
+                let countNumb1 = document.getElementById("count");
+                countNumb1.innerHTML = ++uptoc;
+                if (uptoc === 1169) {
+                    clearInterval(counters);
+                }
+            }
+            </script>
+            </div>
+            <div class="container-child">
+              
+                <div class="icon-1"> <ion-icon name="shirt"></ion-icon></div>
+            <div id="cons">
+            </div>
+            <h1 >OUR SELL.</h1>
+            <h3>
+                Service team contribute  the program.
+            </h3>
+            <script>
+            let con = setInterval(updated);
+            let upton = 0;
+            function updated() {
+                let countNum = document.getElementById("cons");
+                countNum.innerHTML = ++upton;
+                if (upton === 1499) {
+                    clearInterval(con);
+                }
+            }
+            </script>
+            </div>
+        </section><br><br>
+        
+
+
+        <section id="card-box">
+            <div class="card-box-child"><br>
+                <div class="card-image-1">
+                    <img src="IMAGE/gift.png"  class="card-img-g">
+                </div>
+            </div>
+            <div class="card-box-child"><br>
+                <div class="card-text-1">
+                    <h1>GIFTS FOR YOUR
+                        LOVED ONES</h1><br>
+                        <p>Omnis ex nam laudantium odit illum harum, excepturi 
+                            accusamus at corrupti, velit blanditiis unde perspiciatis,
+                            vitae minus culpa? Beatae at aut consequuntur porro 
+                            adipisci aliquam eaque iste 
+                            accusamus at corrupti, velit blanditiis unde perspiciatis,
+                            vitae minus culpa? Beatae at autducimus expedita accusantium?</p>
+                </div>
+                <Button>By Now</Button>
+                <Button>See Mores</Button>
+            </div>
+        </section><br><br>
+        <section>
+            <div class="review">
+                <h1>Find service providers dealing in </h1>
+            </div>
+        </section><br>
+        <section id="review-card">
+                <div class="row row-cols-1 row-cols-md-4 g-4">
+                    <div class="col">
+                    <div class="card h-100 ">
+                        <img src="IMAGE/man_logo4.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                        <h5 class="card-title"> Vivek kumar</h5>
+                        <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                        </div>
+                    </div>
+                    </div>
+                    <div class="col">
+                    <div class="card h-100 ">
+                        <img src="IMAGE/man_logo6.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                        <h5 class="card-title">Tanuu alaya</h5>
+                        <p class="card-text">When surfing on an e-commerce site, 
+                                remember that users have two main aims: purchase </p>
+                        </div>
+                    </div>
+                    </div>
+                    <div class="col">
+                    <div class="card h-100">
+                        <img src="IMAGE/man_logo1.avif" class="card-img-top" alt="...">
+                        <div class="card-body">
+                        <h5 class="card-title">Abhijeet kushwa</h5>
+                        <p class="card-text">This is a longer card with supporting
+                             text below as a natural lead-in to additional content.</p>
+                        </div>
+                    </div>
+                    </div>
+                    <div class="col">
+                        <div class="card h-100 ">
+                            <img src="IMAGE/man_logo7.webp" class="card-img-top" alt="...">
+                            <div class="card-body">
+                            <h5 class="card-title">Ragni singh</h5>
+                            <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content.</p>
+                            </div>
+                        </div>
+                        </div>
+                        
+                        
+                   
+                   
+                </div>
+
+        </section><br><br>
+         <section>
+            <div class="review">
+                <h1>Want to know what makes great eCommerce  </h1>
+            </div>
+        </section><br>
+
+       
+
+
+        <section id="logo">
+            <div class="logo-card">
+                <img src="IMAGE/mesho1.png" class="logo-img">
+            </div>
+            <div class="logo-card">
+                <img src="IMAGE/Flipkart-sellers-hub.avif" class="logo-img">
+            </div>
+            <div class="logo-card">
+                <img src="IMAGE/am.jpg" class="logo-img">
+            </div>
+            <div class="logo-card">
+                <img src="IMAGE/Myntra-Logo.png" class="logo-img">
+            </div>
+            <div class="logo-card">
+                <img src="IMAGE/dmart.png" class="logo-img">
+            </div>
+            <div class="logo-card">
+                <img src="IMAGE/sp.webp" class="logo-img">
+            </div>
+           
+        </section>
+        <br><br>
+
+        <section id="from-c">
+            <div class="box-from">
+              
+                <h1>Marketing Consulant  Quito </h1><br>
+                
+                <form action="Service.php" method="post">
+                        <div class="row mb-3">
+                        <label for="inputEmail3" class="col-sm-2 col-form-label">Name</label>
+                        <div class="col-sm-10">
+                            <input type="text" class="form-control" id="inputEmail3" name="nm">
+                        </div>
+                        </div>
+                        <div class="row mb-3">
+                        <label for="inputPassword3" class="col-sm-2 col-form-label" >Email</label>
+                        <div class="col-sm-10">
+                            <input type="email" class="form-control" id="inputPassword3" name="em">
+                        </div>
+                        </div>
+                        <div class="row mb-3">
+                            <label for="inputPassword3" class="col-sm-2 col-form-label">Password</label>
+                            <div class="col-sm-10">
+                            <input type="password" class="form-control" id="inputPassword3" name="ps">
+                            </div>
+                        </div>
+                        <div class="row mb-3">
+                            <label for="inputPassword3" class="col-sm-2 col-form-label">Mobile</label>
+                            <div class="col-sm-10">
+                            <input type="number" class="form-control" id="inputPassword3" name="mb">
+                            </div>
+                        </div>
+                        <div class="row mb-3">
+                            <label for="inputPassword3" class="col-sm-2 col-form-label">Address</label>
+                            <div class="col-sm-10">
+                            <input type="text" class="form-control" id="inputPassword3" name="ad">
+                            </div>
+                        </div>
+                        <div class="row mb-3">
+                            <label for="inputPassword3" class="col-sm-2 col-form-label">State</label>
+                            <div class="col-sm-10">
+                            <input type="text" class="form-control" id="inputPassword3" name="st">
+                            </div>
+                        </div>
+                        <fieldset class="row mb-3">
+                            <legend class="col-form-label col-sm-2 pt-0">Gender</legend>
+                            <div class="col-sm-10">
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="option1" checked>
+                                <label class="form-check-label" for="gridRadios1">
+                                Male
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios2" value="option2">
+                                <label class="form-check-label" for="gridRadios2">
+                                Female
+                                </label>
+                            </div>
+                            </div>
+                        </fieldset>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                            <label class="form-check-label" for="flexCheckDefault">
+                                I agree with turm and condition.
+                            </label>
+                        </div><br>
+                        <div class="col-5">
+                        <a href="#">  <button type="submit" class="btn btn-primary w-100" name="submit">Send</button></a>
+                        </div>
+                </form>
+            </div>
+           <div class="box-from"></div>
+        </section><br>
+    <section id="main-container">
+        <div class="main-box1">
+            <h2>About</h2><br>
+            <ul>
+                <li>Sells on ecommerce</li>
+                <li>Sell under Ecommerce Accelet</li>
+                <li>Protect and Build your Brand</li>
+                <li>Ecommerce Global Selling </li>
+                <li>Become and Affilited</li>
+                <li>Adverties Your Product </li>
+                <li>Protect and Build your Brand</li>
+                
+               
+            </ul>
+
+            
+
+        </div>
+        <div class="main-box1">
+            <h1>My Account </h1><br>
+            <ul>
+                <li>Card Transction function </li>
+                <li>Sell   Ecommerce Acceletor</li>
+                <li>Trace on Order</li>
+                <li>Ecommerce Global Selling </li>
+                <li>Visit My Accound </li>
+                <li>Adverties Your Product </li>
+                <li>Protect and Build your Brand</li>
+                <li>Prevecy Police Product </li>
+                <li>Save & Ploicy </li>
+               
+            </ul>
+           
+
+        </div>
+        <div class="main-box1">
+            <h1>Contatct Us</h1><br>
+            <ul>
+                <li>Address : Bihar Patna</li>
+                <li>Phone: +990002243 +9144956749</li>
+                <li> Hours:10.00-18.00 Mon-sat</li>
+                <li>Visit My Accound </li>
+               
+            </ul>
+            <h2 >Follows Us</h2>
+            <div class="social">
+                <a href="https://www.instagram.com/kanhaiya101020/"> <ion-icon name="logo-instagram"></ion-icon></a> 
+                <a href="https://web.whatsapp.com/"><ion-icon name="logo-whatsapp"></ion-icon></a>
+                <a href="https://www.facebook.com/profile.php?id=100010786959601"><ion-icon name="logo-facebook"></ion-icon></a>
+                <a href="#"><ion-icon name="logo-twitter"></ion-icon></a>
+                <a href="https://www.linkedin.com/in/kanhaiya-kumar-213435258/"><ion-icon name="logo-linkedin"></ion-icon></a>
+                <a href="https://github.com/login"><ion-icon name="logo-github"></ion-icon></a>
+
+            </div>
+        </div>
+        <div class="main-box1">
+            <h1>Install app</h1>
+            <p>Form App store or Google Play</p>
+            <div class="google-play">
+                <button><ion-icon name="logo-apple"></ion-icon>App Store</button>
+                <button><ion-icon name="logo-google-playstore" class="play-store"></ion-icon>Google Play</button>
+            </div>
+            <p>Secured Patym Gatway</p>
+            <div class="visa-card-container">
+                <img src="IMAGE/visa1.png" class="visa-card">
+                <img src="IMAGE/mastercard3.png" class="maseter">
+                <img src="IMAGE/mastercard4.png" class="maseter">
+                <img src="IMAGE/debit-card2.webp" class="debit-card">
+
+            </div>
+        </div>
+    </section>
+</body>
+</html>

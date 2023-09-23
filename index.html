@@ -15,18 +15,23 @@
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
 <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/brands.min.css" integrity="sha512-9YHSK59/rjvhtDcY/b+4rdnl0V4LPDWdkKceBl8ZLF5TB6745ml1AfluEU6dFWqwDw9lPvnauxFgpKvJqp7jiQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-<link rel="stylesheet" href="Ecomerce.css">
 
 <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+<link rel="stylesheet" href="Ecomerce.css">
+
 </head>
 
 <body>
-        <div class="topnav" id="myTopnav">
-            <a href="ECOMERS.html" class="active">HOME</a>
+   
+        <div class="navbar" id="myHeder">
+            <a href="index.html" >HOME</a>
             <a href="#main-container">ABOUT</a>
             <a href="shop.html">SHOP</a>
             <a href="contact.html">CONTACT</a>
             <a href="Blog.html">BLOG</a>
+            <a href="service.html">SERVICES</a>
+           
+            
             <div class="search">
                 <button><ion-icon name="search"></ion-icon></button>
                 <input type="search" placeholder="Search here...">
@@ -37,11 +42,11 @@
         </div>
         <script>
             function myFunction() {
-            var p = document.getElementById("myTopnav");
-            if (p.className === "topnav") {
+            var p = document.getElementById("myHeder");
+            if (p.className === "navbar") {
                 p.className += " responsive";
             } else {
-                p.className = "topnav";
+                p.className = "navbar";
             }
         }
             </script>
@@ -298,8 +303,91 @@
             </div>
         </div>
     </section><br><br>
+    <section id="container-parent">
+        <div class="container-child">
+            <h1 >OUR SERVICES</h1>
+             <div class="icon-1"> <ion-icon name="cog"></ion-icon></div>
+           <div id="counter">
+           </div>
+           <h3 style="color: #eee;">
+            Service team contribute  the program.
+         </h3>
+    <script>
+        let counts = setInterval(updated);
+        let uptoNumber  = 0;
+        function updated() {
+            let countNum = document.getElementById("counter");
+            countNum.innerHTML = ++uptoNumber;
+            if (uptoNumber === 1400) {
+                clearInterval(counts);
+            }
+        }
+    </script>
+        </div>
 
 
+        <div class="container-child">
+            <h1 >COMPLETE PRO</h1>
+            <div class="icon-1"><ion-icon name="person-add"></ion-icon></div>
+        <div id="counte">
+        </div>
+        <h3 style="color: #eee;">
+            Service team contribute  the program.
+        </h3>
+    <script>
+    let count = setInterval(updated);
+    let uptoNumbe = 0;
+    function updated() {
+        let countNumb = document.getElementById("counte");
+        countNumb.innerHTML = ++uptoNumbe;
+        if (uptoNumbe === 1500) {
+            clearInterval(count);
+        }
+    }
+</script>
+        </div>
+            
+        <div class="container-child">
+            <h1 >HAPPY CLIENTS</h1>
+            <div class="icon-1"> <ion-icon name="car"></ion-icon></div>
+        <div id="count">
+        </div>
+        <h3 style="color: #eee;">
+            Service team contribute  the program.
+        </h3>
+        <script>
+        let counters = setInterval(updated);
+        let uptoc = 0;
+        function updated() {
+            let countNumb1 = document.getElementById("count");
+            countNumb1.innerHTML = ++uptoc;
+            if (uptoc === 1169) {
+                clearInterval(counters);
+            }
+        }
+        </script>
+        </div>
+        <div class="container-child">
+            <h1 >OUR SELL.</h1>
+            <div class="icon-1"> <ion-icon name="shirt"></ion-icon></div>
+        <div id="cons">
+        </div>
+        <h3 style="color: #eee;">
+            Service team contribute  the program.
+        </h3>
+        <script>
+        let con = setInterval(updated);
+        let upton = 0;
+        function updated() {
+            let countNum = document.getElementById("cons");
+            countNum.innerHTML = ++upton;
+            if (upton === 1499) {
+                clearInterval(con);
+            }
+        }
+        </script>
+        </div>
+    </section><br><br>
     <section id="new">
         <div class=" dark-img"  data-aos="zoom-in-up"  data-aos-duration="1000">
             <div class="box-text-d">
@@ -360,7 +448,6 @@
                     <ion-icon name="star"></ion-icon>
                     <ion-icon name="star"></ion-icon>
                     <ion-icon name="star"></ion-icon>
-                    
                 </div>
                 <div  class="price">
                 
@@ -382,7 +469,6 @@
                     
                 </div>
                 <div  class="price">
-                
                     <a href="shop.html"><p class="rupes">$126.00<span ><ion-icon name="cart-outline"></ion-icon></span>
                     </p> </a>
                 </div>
@@ -399,10 +485,8 @@
                     <ion-icon name="star"></ion-icon>
                     <ion-icon name="star"></ion-icon>
                     <ion-icon name="star"></ion-icon>
-                    
                 </div>
                 <div  class="price">
-                
                     <a href="shop.html"><p class="rupes">$799.00<span ><ion-icon name="cart-outline"></ion-icon></span>
                     </p> </a>
                 </div>
@@ -444,8 +528,7 @@
                             <ion-icon name="star"></ion-icon>
                             <ion-icon name="star"></ion-icon>
                             <ion-icon name="star"></ion-icon>
-                            <ion-icon name="star"></ion-icon>
-                            
+                            <ion-icon name="star"></ion-icon>    
                         </div>
                             <div  class="price">
                                 <a href="shop.html"><p class="rupes">$29.00<span ><ion-icon name="cart-outline"></ion-icon></span>
@@ -495,6 +578,7 @@
             </div>
         </div>
     </section><br><br>
+    
     
     <section id="banner"  >
         <div class="banner1"  data-aos="zoom-in-up"  data-aos-duration="3000">
@@ -557,31 +641,49 @@
     <section id="main-container">
         <div class="main-box1">
         
-            <h2>ABOUT</h2>
-            <h1>Brand<span>X..</span></h1>
-            <p>About Us <br><strong>
-            Delvery information <br>
-            Prevecy Police<br>
-            Terms & condition<br>
-            Contact Us<br>
-            Shoping </p></strong>
+            <h2>ABOUT</h2> <br>
+            <ul>
+                <li>Sells on ecommerce</li>
+                <li>Sell under Ecommerce Accelet</li>
+                <li>Protect and Build your Brand</li>
+                <li>Ecommerce Global Selling </li>
+                <li>Become and Affilited</li>
+                <li>Adverties Your Product </li>
+                <li>Protect and Build your Brand</li>
+                <li>Prevecy Police Product </li>
+                <li>Terms & condition</li>
+               
+            </ul>
 
         </div>
         <div class="main-box1">
-            <h1>My Account </h1>
-            <p>sign<br>view card<br>
-            My website<br>
-            Trace on order
-            <br>visit<br>
-            Help</p>
+            <h1>My Account </h1><br>
+
+            <ul>
+                <li>Card Transction function </li>
+                <li>Sell   Ecommerce Acceletor</li>
+                <li>Trace on Order</li>
+                <li>Ecommerce Global Selling </li>
+                <li>Visit My Accound </li>
+                <li>Adverties Your Product </li>
+                <li>Protect and Build your Brand</li>
+                <li>Prevecy Police Product </li>
+                <li>Save & Ploicy </li>
+               
+            </ul>
 
         </div>
         <div class="main-box1">
-            <h1>Contact Us</h1>
-            <p><strong>Address: 343 Patna  Patliputra hajupur vaishali<br>
-            Phone: +990002243 +9144956749<br>
-            Hours:10.00-18.00 Mon-sat</strong></p>
-            <h2 >Follows Us</h2><br>
+            <h1>Contact Us</h1><br>
+            <ul>
+                <li>Address : Bihar Patna</li>
+                <li>Phone: +990002243 +9144956749</li>
+                <li> Hours:10.00-18.00 Mon-sat</li>
+                <li>Visit My Accound </li>
+                <li>Return Center Policy</li>
+                <li>Best Custome Deals </li>
+            </ul>
+            <h2>Follows Us</h2><br> 
             <div class="social">
                 <a href="https://www.instagram.com/kanhaiya101020/"> <ion-icon name="logo-instagram"></ion-icon></a> 
                 <a href="https://web.whatsapp.com/"><ion-icon name="logo-whatsapp"></ion-icon></a>

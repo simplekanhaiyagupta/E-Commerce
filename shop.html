@@ -5,33 +5,181 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Shop</title>
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    
+
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
 <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 <link rel="stylesheet" href="Shop.css">
-
-
 </head>
 <body>
-    <section id="poster1" >
-        <div class="header-text">
-           
-            <h1>#stylesh</h1>
-           
-           
+
+    <section id="hed">
+
+        <div class="topnav" id="myTopnav">
+    
+
+            <a href="index.html">HOME</a>
+            <a href="#main-container">ABOUT</a>
+            <a href="contact.html">CONTACT</a>
+            <a href="shop.html">SHOP</a>
+            <a href="Blog.html">BLOG</a>
+            <a href="service.html">SERVICES</a>
+             <div class="search">
+                <button><ion-icon name="search"></ion-icon></button>
+                <input type="search" placeholder="Search here...">
+            </div>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+            </a>
+        </div>
+        <script>
+            function myFunction() {
+            var p = document.getElementById("myTopnav");
+            if (p.className === "topnav") {
+                p.className += " responsive";
+            } else {
+                p.className = "topnav";
+            }
+        }
+            </script>
+    </section>
+    <section>
+        <div class="slid-img">
         </div>
     </section><br>
+    <section  id="text-box">
+        <div class="box-text">
+            <h1>Our Collection Of Service Team</h1>
+        
+        </div>
+    </section><br><br>
+   
+    <section id="container-parent">
+        <div class="container-child">
+            <h1 >OUR SERVICES</h1>
+             <div class="icon-1"> <ion-icon name="cog"></ion-icon></div>
+           <div id="counter">
+           </div>
+           <h3 style="color: #eee;">
+            Service team contribute  the program.
+         </h3>
+    <script>
+        let counts = setInterval(updated);
+        let uptoNumber  = 0;
+        function updated() {
+            let countNum = document.getElementById("counter");
+            countNum.innerHTML = ++uptoNumber;
+            if (uptoNumber === 1000) {
+                clearInterval(counts);
+            }
+        }
+    </script>
+        </div>
 
+
+        <div class="container-child">
+            <h1 >COMPLETE PRO</h1>
+            <div class="icon-1"><ion-icon name="person-add"></ion-icon></div>
+        <div id="counte">
+        </div>
+        <h3 style="color: #eee;">
+            Service team contribute  the program.
+        </h3>
+    <script>
+    let count = setInterval(updated);
+    let uptoNumbe = 0;
+    function updated() {
+        let countNumb = document.getElementById("counte");
+        countNumb.innerHTML = ++uptoNumbe;
+        if (uptoNumbe === 990) {
+            clearInterval(count);
+        }
+    }
+</script>
+        </div>
+            
+        <div class="container-child">
+            <h1 >HAPPY CLIENTS</h1>
+            <div class="icon-1"> <ion-icon name="car"></ion-icon></div>
+        <div id="count">
+        </div>
+        <h3 style="color: #eee;">
+            Service team contribute  the program.
+        </h3>
+        <script>
+        let counters = setInterval(updated);
+        let uptoc = 0;
+        function updated() {
+            let countNumb1 = document.getElementById("count");
+            countNumb1.innerHTML = ++uptoc;
+            if (uptoc === 1169) {
+                clearInterval(counters);
+            }
+        }
+        </script>
+        </div>
+        <div class="container-child">
+            <h1 >OUR SELL.</h1>
+            <div class="icon-1"> <ion-icon name="shirt"></ion-icon></div>
+        <div id="cons">
+        </div>
+        <h3 style="color: #eee;">
+            Service team contribute  the program.
+        </h3>
+        <script>
+        let con = setInterval(updated);
+        let upton = 0;
+        function updated() {
+            let countNum = document.getElementById("cons");
+            countNum.innerHTML = ++upton;
+            if (upton === 1499) {
+                clearInterval(con);
+            }
+        }
+        </script>
+        </div>
+    </section><br><br>
+    <div class="text-am">
+        <h1>Flat 60% off | Women's traditional wears for any festive looks..<a href="#">sell offers </a></h1>
+        
+    </div><br>
+
+    <section  id="big-card">
+        <div class="small-card">
+            <img src="IMAGE/am-g1.jpg" class="sm-img">
+        </div>
+        <div class="small-card">
+            <img src="IMAGE/am-g2.jpg" class="sm-img">
+        </div>
+        <div class="small-card">
+            <img src="IMAGE/am-g3.jpg" class="sm-img">
+        </div>
+        <div class="small-card">
+            <img src="IMAGE/am-g4.jpg" class="sm-img">
+        </div>
+        <div class="small-card">
+            <img src="IMAGE/am-g5.jpg" class="sm-img">
+        </div>
+        <div class="small-card">
+            <img src="IMAGE/am-g6.jpg" class="sm-img">
+        </div>
+        <div class="small-card">
+            <img src="IMAGE/am-g8.jpg" class="sm-img">
+        </div>
+
+    </section>
+  
     <section  id=" Shop-now">
         <div class="header-text2">
             <h1> Shop Now</h1>
         </div>
-
-
     </section><br>
-    
     <section class="pay" id="payment">
         <div class="from-paymet"><h1>Payment  Card </h1><br>
             <div class="card">
@@ -56,9 +204,9 @@
             <input type="submit" name="submit" class="payment" value="submit">
             <!-- <button class="payment" name="submit" value="submit">Payment</button> -->
         </form>
-
-
         </div>
+
+       
 
     </section><br><br>
 
@@ -398,30 +546,50 @@
         </section><br><br><br> 
         <section id="main-container">
             <div class="main-box1">
-                <h2>ABOUT</h2>
-                <h1>Brand<span>X..</span></h1>
-                <p>About Us <br><strong>
-                Delvery information<br>
-                Prevecy Police<br>
-                Terms & condition<br>
-                Contact Us<br>
-                Shoping </p></strong>
-    
+                <h2>ABOUT</h2><br>
+                <ul>
+                    <li>Sells on ecommerce</li>
+                    <li>Sell under Ecommerce Accelet</li>
+                    <li>Protect and Build your Brand</li>
+                    <li>Ecommerce Global Selling </li>
+                    <li>Become and Affilited</li>
+                    <li>Adverties Your Product </li>
+                    <li>Protect and Build your Brand</li>
+                    <li>Prevecy Police Product </li>
+                    <li>Terms & condition</li>
+                   
+                </ul>
+               
             </div>
             <div class="main-box1">
-                <h1>My Account </h1>
-                <p>sign<br>view card<br>
-                My website<br>
-               Trace on order
-                <br>visit<br>
-             Help</p>
-    
+                <h1>My Account </h1><br>
+               
+                     <ul>
+                <li>Card Transction function </li>
+                <li>Sell   Ecommerce Acceletor</li>
+                <li>Trace on Order</li>
+                <li>Ecommerce Global Selling </li>
+                <li>Visit My Accound </li>
+                <li>Adverties Your Product </li>
+                <li>Protect and Build your Brand</li>
+                <li>Prevecy Police Product </li>
+                <li>Save & Ploicy </li>
+               
+            </ul>
+
             </div>
             <div class="main-box1">
-                <h1>Contact Us</h1>
-                <p><strong>Address: 343 Patna  Patliputra hajupur vaishali<br>
-                Phone: +990002243 +9144956749<br>
-                Hours:10.00-18.00 Mon-sat</strong></p>
+                <h1>Contact Us</h1><br>
+                <ul>
+                    <li>Address : Bihar Patna</li>
+                    <li>Phone: +990002243 +9144956749</li>
+                    <li> Hours:10.00-18.00 Mon-sat</li>
+                    <li>Visit My Accound </li>
+                    <li>Return Center Policy</li>
+                    <li>Best Custome Deals </li>
+                </ul>
+
+              
                 <h2 >Follows Us</h2><br>
                 <div class="social">
                     <a href="https://www.instagram.com/kanhaiya101020/"> <ion-icon name="logo-instagram"></ion-icon></a> 
